@@ -63,6 +63,11 @@ img {
     flex-direction: row;
     align-items: center;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.256);
+    transition: box-shadow 0.2s;
+}
+
+#searchbar form:hover {
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.319);
 }
 
 #searchbar input {
@@ -112,13 +117,6 @@ img {
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.256);
-}
-
-#search-tip {
-    font-weight: 400;
-    color: var(--halfopaque);
-    margin-top: 10px;
-    font-size: 20px;
 }
 
 #invalid-player {
@@ -277,6 +275,22 @@ img {
     visibility: visible;
     opacity: 1;
     bottom: 105%;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 15px;
+    color: var(--halfopaque);
+}
+
+#footer a {
+    color: var(--halfopaque);
+    transition: color 0.2s;
+}
+
+#footer a:hover {
+    color: var(--primary);
 }
 
 @keyframes loading {
