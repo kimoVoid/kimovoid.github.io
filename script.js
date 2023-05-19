@@ -98,7 +98,7 @@ if(player != null) {
                     }
 
                     // no quickbuy or api disabled
-                    if (data.player.stats === undefined || data.player.stats.Bedwars.favourites_2 === undefined) {
+                    if (data.player.stats === undefined || data.player.stats.Bedwars === undefined || data.player.stats.Bedwars.favourites_2 === undefined) {
                         $("#inventory-container").append(`
                         <div id="invalid-player" style="margin-top: 20px;">
                             <div><i data-feather="alert-triangle" style="margin-right: 10px;"></i>No QuickBuy :(</div>

@@ -331,11 +331,37 @@ img {
     }
 
     .role {
-        background-color: #232323;
-        border-color: #181818;
+        color: white;
     }
 
+    .VIP,
+    .VIP_PLUS {
+        background-color: #55ff54;
+        border-color: #55ff54;
+        color: #1f621f;
+    }
+    
+    .MVP,
+    .MVP_PLUS {
+        background-color: #56fefe;
+        border-color: #56fefe;
+        color: #258282;
+    }
+    
+    .MVP_PLUS_PLUS {
+        background-color: #feaa00;
+        border-color: #feaa00;
+        color: #6c4800;
+    }
+    
+    .ADMIN {
+        background-color: #ff5555;
+        border-color: #ff5555;
+        color: #6d2424;
+    }
+    
     .YOUTUBE {
-        border-color: rgb(255, 89, 89);
+        background-color: #ff5555;
+        border-color: #ff5555;
     }
 }
