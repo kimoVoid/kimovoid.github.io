@@ -2,9 +2,9 @@
 <html>
     <head>
         <title>Quick Buy Viewer</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.png">
+        <link rel="icon" type="image/x-icon" href="/resources/favicon.png">
         <link rel="stylesheet" type="text/css" href="/style.css?v=2">
-        <link rel="stylesheet" type="text/css" href="/items/minecraft-items-spritesheet.css">
+        <link rel="stylesheet" type="text/css" href="/resources/minecraft-items-spritesheet.css">
         <script src="https://unpkg.com/feather-icons"></script>
     </head>
     <body>
@@ -30,6 +30,7 @@
 
         <div class="center">
             <div id="footer">
+                <span id="commit">Loading last commit...</span>
                 Made with the <a href="https://api.hypixel.net/" target="_blank">Hypixel API</a> and <a href="https://github.com/Electroid/mojang-api" target="_blank">Electroid's Mojang API</a>
             </div>
         </div>
@@ -42,7 +43,8 @@
                 }).prop('disabled',true);
             });
         </script>
-        <script src="/script.js"></script>
+        <script src="/scripts/script.js"></script>
+        <script src="/scripts/commit.js"></script>
         <script>feather.replace()</script>
     </body>
 </html>
