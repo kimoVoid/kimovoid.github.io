@@ -37,7 +37,7 @@ if(player != null) {
 
             $.ajax({
                 dataType: "json",
-                url: "https://api.hypixel.net/player?key=e0896d83-bcd2-4729-868f-6e3b2b6833ee&uuid=" + playerUuid,
+                url: "https://api.hypixel.net/player?key=89796871-9a75-442b-9267-69ef620ba645&uuid=" + playerUuid,
                 success: function(data) {
                     $("#inventory-container").empty();
                     if (data.player === null) {
