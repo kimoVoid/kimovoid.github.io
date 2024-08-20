@@ -54,10 +54,16 @@ img {
     margin: 2px;
     font-size: 22px;
     color: #ffbdc1;
-    text-decoration: underline;
     transition: 0.2s;
+    gap: 5px;
+    text-decoration: none;
 }
 
 .link:hover {
     color: #ff848c;
+}
+
+.link p {
+    margin: 0px;
+    text-decoration: underline;
 }
