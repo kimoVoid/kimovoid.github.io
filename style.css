@@ -1,9 +1,13 @@
 :root {
-    --bg: #232323;
+    --bg: #151515;
     --primary: white;
-    --hover: rgba(255, 255, 255, 0.181);
-    --container: rgba(255, 255, 255, 0.067);
-    --container2: #171717aa;
+    --container: rgba(26, 25, 26, 0.8);
+    --container-border: rgb(42, 41, 42);
+    --width: 300px;
+    --height: 180px;
+    --border: 2px;
+    --gradient-1-size: 25%;
+    --gradient-2-size: 50%;
 }
 
 body {
@@ -17,7 +21,17 @@ body {
     -webkit-tap-highlight-color: transparent;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  position: relative;
+}
+
 img {
+    width: 42px;
+    border-radius: 8px;
+    margin-right: 8px;
     -khtml-user-select: none;
     -o-user-select: none;
     -moz-user-select: none;
@@ -31,29 +45,112 @@ img {
     align-items: center;
 }
 
-#container {
-    margin-top: 20px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20px;
-    border-radius: 30px;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.256);
+.social-btn {
+    color: rgb(161, 156, 160);
+    text-decoration: none;
+    transition: color 0.2s;
 }
 
-#container h1 {
+.social-btn:hover {
+    color: white;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: var(--width);
+    height: var(--height);
+}
+
+.card:hover > .container-border::after {
+    opacity: 1;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    z-index: 3;
+}
+
+.container-border {
+    --x-px: calc(var(--x) * 1px);
+    --y-px: calc(var(--y) * 1px);
+    background: var(--container-border);
+    border-radius: 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  
+    &:before,
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        background: radial-gradient(
+            800px circle at var(--x-px) var(--y-px),
+            rgba(255, 139, 164, 0.347) 0%, rgba(255, 110, 221, 0.084) var(--gradient-1-size), rgba(216, 87, 255, 0) var(--gradient-2-size),
+            transparent 40%
+        );
+    }
+  
+    &:before {
+        z-index: 0;
+    }
+  
+    &:after {
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.4s ease;
+    }
+}
+
+.container {
+    background: var(--container);
+    border-radius: 18px;
+    z-index: 1;
+    position: absolute;
+    padding: 0 1rem 0 2rem;
+    inset: var(--border);
+}
+
+.container-hsmp {
+    background: linear-gradient(90deg, rgba(26, 25, 26, 1) 0%, rgba(252,70,107,0) 100%);
+}
+
+.hsmp-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+
+h1 {
     font-size: 25px;
-    font-weight: 500;
-    margin: 0;
-    color: gray;
+    margin: 0px;
 }
 
 .link {
+    display: flex;
+    align-items: center;
     margin: 2px;
-    font-size: 22px;
-    color: #ffbdc1;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.678);
     transition: 0.2s;
     gap: 5px;
     text-decoration: none;
@@ -66,4 +163,52 @@ img {
 .link p {
     margin: 0px;
     text-decoration: underline;
+}
+
+@media (pointer:none), (pointer:coarse) {
+    :root {
+        --bg: #151515;
+        --primary: white;
+        --container: rgb(26, 25, 26);
+        --border: rgb(42, 41, 42);
+        --width: 600px;
+        --height: 360px;
+        --border: 4px;
+        --gradient-1-size: 50%;
+        --gradient-2-size: 100%;
+    }
+
+    body {
+        font-size: 50px;
+    }
+
+    img {
+        width: 80px;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+
+    .containers {
+        flex-direction: column;
+    }
+
+    .container-border {
+        border-radius: 44px;
+    }
+
+    .hsmp-bg {
+        border-radius: 44px;
+    }
+
+    .container {
+        border-radius: 40px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .link {
+        font-size: 40px;
+    }
 }
