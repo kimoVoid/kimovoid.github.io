@@ -17,7 +17,7 @@ body {
     color: var(--primary);
     font-size: 30px;
     min-height: 100vh;
-    font-family: 'Segoe UI Variable Display';
+    font-family: "Work Sans", sans-serif;
     -webkit-tap-highlight-color: transparent;
 }
 
