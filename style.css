@@ -4,7 +4,7 @@
     --container: rgba(26, 25, 26, 0.9);
     --container-border: rgb(42, 41, 42);
     --width: 300px;
-    --height: 180px;
+    --height: 200px;
     --border: 2px;
     --gradient-1-size: 25%;
     --gradient-2-size: 50%;
@@ -168,6 +168,16 @@ h1 {
 .link p {
     margin: 0px;
     text-decoration: underline;
+}
+
+.version-badge {
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(255, 246, 246, 0.41);
+    background-color: rgba(143, 137, 137, 0.101);
+    padding: 5px 8px 5px 8px;
+    border-radius: 30px;
+    margin-left: 10px;
 }
 
 @media (pointer:none), (pointer:coarse) {
