@@ -3,8 +3,8 @@
     --primary: white;
     --container: rgba(26, 25, 26, 0.9);
     --container-border: rgb(42, 41, 42);
-    --width: 300px;
-    --height: 200px;
+    --width: 400px;
+    --height: 250px;
     --border: 2px;
     --gradient-1-size: 25%;
     --gradient-2-size: 50%;
@@ -83,6 +83,10 @@ img {
     flex-direction: column;
     padding-left: 40px;
     z-index: 3;
+}
+
+.card-content > a {
+    white-space: nowrap;
 }
 
 .container-border {
@@ -171,13 +175,13 @@ h1 {
 }
 
 .version-badge {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     color: rgba(255, 246, 246, 0.41);
     background-color: rgba(143, 137, 137, 0.101);
-    padding: 5px 8px 5px 8px;
+    padding: 3px 6px 3px 6px;
     border-radius: 30px;
-    margin-left: 10px;
+    margin-left: 2px;
 }
 
 @media (pointer:none), (pointer:coarse) {
@@ -186,8 +190,8 @@ h1 {
         --primary: white;
         --container: rgb(26, 25, 26);
         --border: rgb(42, 41, 42);
-        --width: 600px;
-        --height: 360px;
+        --width: 700px;
+        --height: 400px;
         --border: 4px;
         --gradient-1-size: 50%;
         --gradient-2-size: 100%;
@@ -238,5 +242,10 @@ h1 {
 
     .card-content {
         padding-left: 70px;
+    }
+
+    .version-badge {
+        font-size: 25px;
+        padding: 5px 10px 5px 10px;
     }
 }
