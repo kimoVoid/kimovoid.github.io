@@ -1,0 +1,810 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "me.kimovoid",
+    "module": "reframed",
+    "version": "1.0.0+b1.7.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-bom",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "reframed-1.0.0+b1.7.3.jar",
+          "url": "reframed-1.0.0+b1.7.3.jar",
+          "size": 9499667,
+          "sha512": "ebf71d96047398f03e0bedd0babb520fb151314a52daffd86dc7613a7f2783f53198aaca4c3e4219998f3fe6472a9d614800f1e1a2f9bb0acd86f1e8286bc015",
+          "sha256": "18cf7de33fb70f5dc46072e1e12e2ad47539d25f22f0808885419e603d3385d5",
+          "sha1": "b353e01a0e8e795c758dc2f627d2a41c65216a03",
+          "md5": "614c50023d308526e1c5f60440505bc1"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 21,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-bom",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "attributes": {
+            "org.gradle.category": "platform"
+          },
+          "endorseStrictVersions": true
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "version": {
+            "requires": "3.4.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-windows-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-macos-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-glfw",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-glfw",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-openal",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-openal",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux-arm64"
+            }
+          }
+        },
+        {
+          "group": "org.lwjgl",
+          "module": "lwjgl-opengl",
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ],
+          "thirdPartyCompatibility": {
+            "artifactSelector": {
+              "name": "lwjgl-opengl",
+              "type": "jar",
+              "extension": "jar",
+              "classifier": "natives-linux-arm64"
+            }
+          }
+        },
+        {
+          "group": "net.fabricmc",
+          "module": "fabric-loader",
+          "version": {
+            "requires": "0.19.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "core",
+          "version": {
+            "requires": "0.7.1"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking-impl",
+          "version": {
+            "requires": "0.1.1+mcb1.5-mc11w48a"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "keybinds",
+          "version": {
+            "requires": "0.2.0+mca1.0.1_01-mcb1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "branding",
+          "version": {
+            "requires": "0.4.2+mca1.2.2-mc14w29b"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "text-components",
+          "version": {
+            "requires": "0.1.0-alpha.1+mca0.1.0-mc1.14.4"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "executors",
+          "version": {
+            "requires": "0.1.0+mcin-20100128-2304-mcb1.9-pre2"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "entrypoints",
+          "version": {
+            "requires": "0.6.0+mca1.0.1_01-mc1.5.2"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking",
+          "version": {
+            "requires": "0.9.0+mcb1.0-mc13w39b"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "lifecycle-events",
+          "version": {
+            "requires": "0.6.0+mcb1.3-mcb1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "config",
+          "version": {
+            "requires": "0.6.0+mcb1.3-mcb1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "resource-loader",
+          "version": {
+            "requires": "0.6.1+mca1.2.2-mc11w48a"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "reframed-1.0.0+b1.7.3.jar",
+          "url": "reframed-1.0.0+b1.7.3.jar",
+          "size": 9499667,
+          "sha512": "ebf71d96047398f03e0bedd0babb520fb151314a52daffd86dc7613a7f2783f53198aaca4c3e4219998f3fe6472a9d614800f1e1a2f9bb0acd86f1e8286bc015",
+          "sha256": "18cf7de33fb70f5dc46072e1e12e2ad47539d25f22f0808885419e603d3385d5",
+          "sha1": "b353e01a0e8e795c758dc2f627d2a41c65216a03",
+          "md5": "614c50023d308526e1c5f60440505bc1"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "reframed-1.0.0+b1.7.3-sources.jar",
+          "url": "reframed-1.0.0+b1.7.3-sources.jar",
+          "size": 225870,
+          "sha512": "d069f87a16ff64b32f3e2db690727b73337c2439a3a3e7257ffbdd467ecbb82f9ed756eeb2130eb07d8964e871db8c75d877c33709bb9ead564098c70c743fb2",
+          "sha256": "c6655bd85cc2a2f8b8f71fc458b476e8fb4206c13f1fba3550129683fb92a8a7",
+          "sha1": "3c6ce17459766610e9ea5eed2ca6217ea1c648be",
+          "md5": "3cff2c43da1613ea881b3e95ff2f21d3"
+        }
+      ]
+    }
+  ]
+}
