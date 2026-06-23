@@ -1,0 +1,173 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.kimovoid",
+    "module": "silk-config",
+    "version": "1.0.0+b1.7.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.4.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "silk-config-1.0.0+b1.7.3.jar",
+          "url": "silk-config-1.0.0+b1.7.3.jar",
+          "size": 76897,
+          "sha512": "dca5d61ce9b160be9e74e6541fe4c0631bfe0966f76eee30abe9ae62004eba04b14b59f9bb527889f2323f60925a9e06a11d220735662f9cc0387be7a56e6e8b",
+          "sha256": "b6d6ef21bb888e475571d72990fb17803e44193fe91ab86c82f160d8a315d995",
+          "sha1": "00c24d8ba4d8fd1fb7896f661bef62a1d56c4c49",
+          "md5": "e3b51ca199d8b35d88d3ef99ea78a410"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.fabricmc",
+          "module": "fabric-loader",
+          "version": {
+            "requires": "0.19.1"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "core",
+          "version": {
+            "requires": "0.7.1"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking-impl",
+          "version": {
+            "requires": "0.1.1+mcb1.5-mc11w48a"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "keybinds",
+          "version": {
+            "requires": "0.2.0+mca1.0.1_01-mcb1.7.3"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "branding",
+          "version": {
+            "requires": "0.4.2+mca1.2.2-mc14w29b"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "text-components",
+          "version": {
+            "requires": "0.1.0-alpha.1+mca0.1.0-mc1.14.4"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "executors",
+          "version": {
+            "requires": "0.1.0+mcin-20100128-2304-mcb1.9-pre2"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "entrypoints",
+          "version": {
+            "requires": "0.6.0+mca1.0.1_01-mc1.5.2"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking",
+          "version": {
+            "requires": "0.9.0+mcb1.0-mc13w39b"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "lifecycle-events",
+          "version": {
+            "requires": "0.6.0+mcb1.3-mcb1.7.3"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "config",
+          "version": {
+            "requires": "0.6.0+mcb1.3-mcb1.7.3"
+          }
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "resource-loader",
+          "version": {
+            "requires": "0.6.1+mca1.2.2-mc11w48a"
+          }
+        },
+        {
+          "group": "com.terraformersmc",
+          "module": "modmenu",
+          "version": {
+            "requires": "0.4.0+mcb1.7.3"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "silk-config-1.0.0+b1.7.3.jar",
+          "url": "silk-config-1.0.0+b1.7.3.jar",
+          "size": 76897,
+          "sha512": "dca5d61ce9b160be9e74e6541fe4c0631bfe0966f76eee30abe9ae62004eba04b14b59f9bb527889f2323f60925a9e06a11d220735662f9cc0387be7a56e6e8b",
+          "sha256": "b6d6ef21bb888e475571d72990fb17803e44193fe91ab86c82f160d8a315d995",
+          "sha1": "00c24d8ba4d8fd1fb7896f661bef62a1d56c4c49",
+          "md5": "e3b51ca199d8b35d88d3ef99ea78a410"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "silk-config-1.0.0+b1.7.3-sources.jar",
+          "url": "silk-config-1.0.0+b1.7.3-sources.jar",
+          "size": 57521,
+          "sha512": "7efadbcdfc84bba4085e7dda7fa2a47bf045cfab83502c3edffcd9363cc79d0e2040ea2f5bdc30f19b6fc3c83b2d5d9dd2a198fb04f0275cede7dd216de6e66f",
+          "sha256": "c89a92879954a9f7e70b492ac2cf4d9fef15efe566475ebe77d372a72059fcc5",
+          "sha1": "79eb5ca4ae992c0494cac71de91c43009feee4d3",
+          "md5": "10566548124adc437e57c591880d7107"
+        }
+      ]
+    }
+  ]
+}
