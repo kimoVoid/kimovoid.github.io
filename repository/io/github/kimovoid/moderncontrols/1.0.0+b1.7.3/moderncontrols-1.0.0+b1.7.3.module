@@ -27,11 +27,11 @@
         {
           "name": "moderncontrols-1.0.0+b1.7.3.jar",
           "url": "moderncontrols-1.0.0+b1.7.3.jar",
-          "size": 28836,
-          "sha512": "fdda9a6d819bf623700a0d7bfee42160c909a8fab193e675be886e8b2d0de99c56bdbec4f7b08df4a05447f25151758a3d9ae09b14c2ca59e7bb51e4ece24230",
-          "sha256": "56a329a1311d460fc7777ed7e54516310c023c6227a0ef09a7c900bae282966d",
-          "sha1": "85416270a2f52b7c7ed0f78f13925fe0c8069f24",
-          "md5": "129d9ea7a20ff4510e3e23b33547efb2"
+          "size": 28779,
+          "sha512": "de04af475efefd9bb43dc97239c67b702b1f580aac2652995e11af312d521f42eaf2fd36f107ac3420242c49aafc1c35f460efec4b9a1d64d343829922a300f9",
+          "sha256": "2d497512668e79f8adb6b6c5f436d34febc30dc66b77bace39ec116e0cdf46b9",
+          "sha1": "489e885c9dc7bb27179732cb8176301f66e0057d",
+          "md5": "43cfab9b8a176c2ee9bac4312087a953"
         }
       ]
     },
@@ -258,11 +258,11 @@
         {
           "name": "moderncontrols-1.0.0+b1.7.3.jar",
           "url": "moderncontrols-1.0.0+b1.7.3.jar",
-          "size": 28836,
-          "sha512": "fdda9a6d819bf623700a0d7bfee42160c909a8fab193e675be886e8b2d0de99c56bdbec4f7b08df4a05447f25151758a3d9ae09b14c2ca59e7bb51e4ece24230",
-          "sha256": "56a329a1311d460fc7777ed7e54516310c023c6227a0ef09a7c900bae282966d",
-          "sha1": "85416270a2f52b7c7ed0f78f13925fe0c8069f24",
-          "md5": "129d9ea7a20ff4510e3e23b33547efb2"
+          "size": 28779,
+          "sha512": "de04af475efefd9bb43dc97239c67b702b1f580aac2652995e11af312d521f42eaf2fd36f107ac3420242c49aafc1c35f460efec4b9a1d64d343829922a300f9",
+          "sha256": "2d497512668e79f8adb6b6c5f436d34febc30dc66b77bace39ec116e0cdf46b9",
+          "sha1": "489e885c9dc7bb27179732cb8176301f66e0057d",
+          "md5": "43cfab9b8a176c2ee9bac4312087a953"
         }
       ]
     },
@@ -278,11 +278,11 @@
         {
           "name": "moderncontrols-1.0.0+b1.7.3-sources.jar",
           "url": "moderncontrols-1.0.0+b1.7.3-sources.jar",
-          "size": 17101,
-          "sha512": "71f37681ae2d920db712cf9e2f2220fb1242321060fc1a18049a4d23358dd08e8ea9df91640d401bbdfbaa8a3f4e98e5532939e39db7811e7324a3e1068e714c",
-          "sha256": "71ad305b1b804a08ac7e4dcfb33c0e19d905669b9ba1bb07bc0c61ced8fcc9a0",
-          "sha1": "601d9ce128f8b9ddf88fffbe408fce5069ab7b6a",
-          "md5": "bd18dfc0732bf6b998e1270f5585021e"
+          "size": 17012,
+          "sha512": "ccb2bf3b4e97567f1cab85b8cd4330cadda7825a0b36e3219fb5ce69819bcfdcf7b02f1d7cc889598d42deab1328b6659b5dfd69d5d1e4834f95baa51577dff6",
+          "sha256": "02bd47dd70820406dc159301f47423f7d4f233244c77516cf67600dfea4f82ac",
+          "sha1": "148a0a39b2c8bb56263e78acae4679dab54d5613",
+          "md5": "d7059ec790fad839bef570e55596f9a8"
         }
       ]
     }
