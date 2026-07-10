@@ -1,0 +1,290 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.kimovoid",
+    "module": "mcpatcherfabric",
+    "version": "1.0.0+b1.7.3",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.5.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api"
+      },
+      "files": [
+        {
+          "name": "mcpatcherfabric-1.0.0+b1.7.3.jar",
+          "url": "mcpatcherfabric-1.0.0+b1.7.3.jar",
+          "size": 48037,
+          "sha512": "ccc46656d9e7c945a213b7d09c323f9cafd5ff74a9aedb3f72af147e70be4f579116b7db98fe08d34be935cde28d074d4d104bd4241a292653e637799fe1a16d",
+          "sha256": "89adc2d5839d958b0c38819133745f768438fccea21dea26b230dce04eaf8a44",
+          "sha1": "371200439a40e3785554ae932900b12bbf33981f",
+          "md5": "8fcc54f952d1e737b293e0111f869b7b"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.version": 8,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "net.fabricmc",
+          "module": "fabric-loader",
+          "version": {
+            "requires": "0.19.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "localization",
+          "version": {
+            "requires": "0.1.0+mcb1.0-mc11w48a"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "blocks",
+          "version": {
+            "requires": "0.1.1+mca1.0.1_01-mc1.6.4"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "branding",
+          "version": {
+            "requires": "0.4.3+mca1.2.2-mc14w29b"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "text-components",
+          "version": {
+            "requires": "0.1.0-alpha.3+mca0.1.0-mc1.14.4"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking",
+          "version": {
+            "requires": "0.9.0+mcb1.0-mc13w39b"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "core",
+          "version": {
+            "requires": "0.9.0+mca1.0.1_01-mc14w26c"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "networking-impl",
+          "version": {
+            "requires": "0.1.1+mcb1.5-mc11w48a"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "keybinds",
+          "version": {
+            "requires": "0.3.0+mca1.0.1_01-mcb1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "executors",
+          "version": {
+            "requires": "0.1.0+mcin-20100128-2304-mcb1.9-pre2"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "entrypoints",
+          "version": {
+            "requires": "0.6.1+mca1.0.1_01-mc1.5.2"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "lifecycle-events",
+          "version": {
+            "requires": "0.6.1+mcb1.3-mc12w17a"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "config",
+          "version": {
+            "requires": "0.6.2+mcb1.3-mcb1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "items",
+          "version": {
+            "requires": "0.1.0+mca1.0.1_01-mc1.6.4"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "net.ornithemc.osl-gen2",
+          "module": "resource-loader",
+          "version": {
+            "requires": "0.7.4-alpha.2+mca1.2.2-mc1.2.5"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        },
+        {
+          "group": "io.github.kimovoid",
+          "module": "reframed",
+          "version": {
+            "requires": "1.0.2+b1.7.3"
+          },
+          "excludes": [
+            {
+              "group": "org.lwjgl.lwjgl",
+              "module": "*"
+            }
+          ]
+        }
+      ],
+      "files": [
+        {
+          "name": "mcpatcherfabric-1.0.0+b1.7.3.jar",
+          "url": "mcpatcherfabric-1.0.0+b1.7.3.jar",
+          "size": 48037,
+          "sha512": "ccc46656d9e7c945a213b7d09c323f9cafd5ff74a9aedb3f72af147e70be4f579116b7db98fe08d34be935cde28d074d4d104bd4241a292653e637799fe1a16d",
+          "sha256": "89adc2d5839d958b0c38819133745f768438fccea21dea26b230dce04eaf8a44",
+          "sha1": "371200439a40e3785554ae932900b12bbf33981f",
+          "md5": "8fcc54f952d1e737b293e0111f869b7b"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "mcpatcherfabric-1.0.0+b1.7.3-sources.jar",
+          "url": "mcpatcherfabric-1.0.0+b1.7.3-sources.jar",
+          "size": 35111,
+          "sha512": "cc97e1846b8188cabe3b451d7dc522a3d83a9177ff7e738e0d9eb09e2ceb89afc03eb922868262b5ec24bc60d3b3600b0a0c4e660128de02a5f9408eeb3f903f",
+          "sha256": "f1e1f590c0e8086c94a15b4c5cff9989170a0c4c73581a0ac5e959d09e8ac359",
+          "sha1": "ca64fa8808cdb597c9bf5dee8496fc1551d5c166",
+          "md5": "44fda824043b6dd611950132c4c4510b"
+        }
+      ]
+    }
+  ]
+}
